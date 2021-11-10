@@ -1,16 +1,17 @@
 [tool.poetry]
 name = "SimplePackage"
-version = "0.1.0"
-description = ""
-authors = ["Shiri Viner <shiri.viner@snyk.io>"]
+version = "1.0.0"
+description = "A simple python package to illustrate dependency management with Poetry"
+authors = ['Snyk']
+
 
 [tool.poetry.dependencies]
-python = "^3.9"
-tensorflow = "~2.6.1"
+python = ">3.6"
+tensorflow = "2.6.1"
 
 [tool.poetry.dev-dependencies]
-pytest = "^5.2"
+isOdd = "0.1.2"
 
 [build-system]
-requires = ["poetry-core>=1.0.0"]
-build-backend = "poetry.core.masonry.api"
+requires = ["poetry>=0.12"]
+build-backend = "poetry.masonry.api"
